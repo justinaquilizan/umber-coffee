@@ -1,0 +1,282 @@
+
+
+/* Cart Button */
+.cart-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.cart-btn {
+  background: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px var(--shadow);
+  transition: background 0.2s;
+}
+
+.cart-btn:hover,
+.cart-btn:focus {
+  background: #a85a13;
+  outline: none;
+}
+
+/* Highlight Section (Menu Grid) */
+.highlight {
+  padding: 2rem 0 4rem;
+  text-align: center;
+}
+
+.highlight h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.highlight_drinks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.drink {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px var(--shadow);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.drink img {
+  width: 100%;
+  max-width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 1.2rem;
+}
+
+.drink h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.drink p {
+  color: var(--secondary-color);
+  line-height: 1.6;
+  margin-bottom: 0.7rem;
+}
+
+.menu-item-price {
+  font-weight: 600;
+  color: var(--accent-color);
+  font-size: 1.1rem;
+  margin-top: auto;
+}
+
+/* Order Button */
+.order-btn {
+  margin-top: 1rem;
+  background: var(--accent-color);
+  color: var(--white);
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px var(--shadow);
+  transition: background 0.2s;
+}
+
+.order-btn:hover,
+.order-btn:focus {
+  background: #a85a13;
+  outline: none;
+}
+
+/* Order Modal Styles */
+.order-modal {
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(75, 56, 50, 0.25);
+}
+
+.order-modal-content {
+  background: var(--white);
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px var(--shadow);
+  min-width: 300px;
+  max-width: 90vw;
+  position: relative;
+  text-align: left;
+}
+
+.order-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.order-modal-content h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}s
+
+.order-modal-content label {
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.order-modal-content input[type="number"],
+.order-modal-content textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+.order-modal-submit {
+  background: var(--accent-color);
+  color: var(--white);
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px var(--shadow);
+  transition: background 0.2s;
+}
+
+.order-modal-submit:hover,
+.order-modal-submit:focus {
+  background: #a85a13;
+  outline: none;
+}
+
+/* Cart Button */
+.cart-btn-container {
+  margin-left: auto; /* Align the cart button to the right */
+}
+
+.cart-btn {
+  background: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.2s ease;
+}
+
+.cart-btn:hover,
+.cart-btn:focus {
+  background: #a85a13;
+  outline: none;
+}
+
+/* Cart Count */
+.cart-count {
+  background-color: var(--accent-color);
+  color: var(--white);
+  border-radius: 50%;
+  padding: 0.2em 0.6em;
+  font-size: 0.75em;
+  position: relative;
+  top: -0.5em;
+  left: 0.2em;
+  min-width: 1.5em;
+  text-align: center;
+  display: inline-block;
+}
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 1rem;
+  }
+
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--background-color);
+    flex-direction: column;
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+    box-shadow: 0 5px 15px var(--shadow);
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .highlight_drinks {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .social_links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* Accessibility */
+@media (prefers-contrast: high) {
+  :root {
+    --primary-color: #000000;
+    --secondary-color: #333333;
+    --accent-color: #cc5500;
+    --text-color: #000000;
+  }
+}
